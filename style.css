@@ -13,7 +13,6 @@ header {
 .container-clearfix {
   width: 1024px;
   height: 70px;
-  text-align: center;
 }
 
 .logo {
@@ -25,10 +24,10 @@ header {
 }
 
 .nav-list {
-  padding: 20px;
+  margin: 20px;
   list-style: none;
   display: inline-block;
-  
+  line-height: center;
   font-size: 16px;
   color: #FAFAFA;
 }
@@ -37,7 +36,7 @@ header {
   width: 100%;
   height: 650px;
   background-image: url(img/mv.png);
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
 }
 
@@ -56,8 +55,11 @@ header {
 }
 
 #portfolio {
+  margin: 0 auto;
   width: 920px;
- 
+  background-color: #ECEFF1;
+  height: 1000px;
+
 }
 
 .heading {
@@ -69,13 +71,37 @@ header {
 .heading-text {
   font-size: 16px;
   color: #000000;
-  padding: 30px auto;
+  margin: 30px 0;
+  text-align: center;
 }
 .portfolio-image {
-  background-image: url(img/sketch.jpg);
+  width: 920px;
+  background-image: 
+    url(img/sketch.jpg), 
+    url(img/websuku.png),
+    url(img/write.jpg),
+    url(img/webcamp.png),
+    url(img/talk.jpg),
+    url(img/webcamp-mother.png);
+  background-repeat: 
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  background-size: 
+    300px 250px;
+  display: inline-block;
+  margin-top: 30px;
 }
+
 footer {
   width: 100%;
-  height: 120px;
-  background-color: grey;
+  height: 60px;
+  background-color:#EC715F;
+  font-size: 16px;
+  color: #FAFAFA;
+  text-align: center;
+  line-height: 60px;
 }
