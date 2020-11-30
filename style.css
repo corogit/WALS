@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;  
+}
 
 header {
   width: 100%;
@@ -11,22 +14,32 @@ header {
 }
 
 .container-clearfix {
+  margin: 0 auto;
   width: 1024px;
   height: 70px;
+  
+  
+}
+.container-clearfix > :nav {
+  margin-right: auto;
 }
 
 .logo {
   height: 70px;
+  float: left;
+  position: relative;
+}
+.nav {
+  float: right;
+  position: relative
 }
 
-.nav {
-  text-align: right;
-}
 
 .nav-list {
   margin: 20px;
   list-style: none;
   display: inline-block;
+  text-align: right;
   line-height: center;
   font-size: 16px;
   color: #FAFAFA;
@@ -61,6 +74,14 @@ header {
 .container {
   padding-bottom: 90px;
 }
+.heading::after {
+  content: "";
+  border-bottom: #EC715F;
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 8px auto 0 auto;
+}
 
 .image-group{
   width: 1000px;
@@ -69,17 +90,35 @@ header {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .heading {
+  position: relative;
   font-size: 32px;
   color: #000000;
   padding-top: 90px;
   text-align: center;
+  display: inline-block;
+  margin-bottom: 1em;
 }
+.heading::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 70px;
+  height: 3px;
+  display: inline-block;
+  border-color: #EC715F;
+  margin: 8px auto 0 auto;
+  transform: translate(-50%);
+}
+
 .heading-text {
   font-size: 16px;
   color: #000000;
   margin: 30px 0;
   text-align: center;
+
 }
 
 .image-box {
@@ -183,7 +222,7 @@ header {
 .right-content {
   text-align: center;
 }
-.right-content fa {
+.right-content i {
   font-size: 50px;
   margin-right: 20px;
 }
