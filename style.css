@@ -56,12 +56,19 @@ header {
 
 #portfolio {
   margin: 0 auto;
-  width: 920px;
   background-color: #ECEFF1;
-  height: 1000px;
-
+}
+.container {
+  padding-bottom: 90px;
 }
 
+.image-group{
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .heading {
   font-size: 32px;
   color: #000000;
@@ -74,27 +81,114 @@ header {
   margin: 30px 0;
   text-align: center;
 }
-.portfolio-image {
-  width: 920px;
-  background-image: 
-    url(img/sketch.jpg), 
-    url(img/websuku.png),
-    url(img/write.jpg),
-    url(img/webcamp.png),
-    url(img/talk.jpg),
-    url(img/webcamp-mother.png);
-  background-repeat: 
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat;
-  background-size: 
-    300px 250px;
-  display: inline-block;
-  margin-top: 30px;
+
+.image-box {
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
+.image-box:nth-child(1) {
+  background-image: url(img/sketch.jpg);
+}
+.image-box:nth-child(2) {
+  background-image: url(img/websuku.png);
+}
+.image-box:nth-child(3) {
+  background-image: url(img/write.jpg);
+}
+.image-box:nth-child(4) {
+  background-image: url(img/webcamp.png);
+}
+.image-box:nth-child(5) {
+  background-image: url(img/talk.jpg);
+}
+.image-box:nth-child(6) {
+  background-image: url(img/webcamp-mother.png);
+}
+
+#feature {
+  width: 980px;
+  margin: 0 auto;
+}
+.strength-group {
+  display: flex;
+  justify-content: center;
+}
+
+.strength {
+  width: 320px;
+  height: auto;
+  margin-right: 10px;
+}
+.fa {
+  font-size: 60px;
+}
+.strength-title {
+  font-size: 20px;
+  color: #000000;
+  margin: 10px auto;
+}
+
+#profile {
+  background-color: #ECEFF1;
+  margin: 0 auto;
+}
+.profile-group {
+  width: 1024px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.left-content {
+  width: 512px;
+  text-align: center;
+}
+.my-icon {
+  
+  border-radius: 50%;
+  
+}
+.right-content {
+  width: 512px;
+}
+.discripton-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  
+}
+.discription-text {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+#contact {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.contact-group {
+  display: flex;
+  justify-content: center;
+}
+.left-content {
+  width: 400px;
+}
+.discripton-title {
+  text-align: left;
+}
+.right-content {
+  text-align: center;
+}
+.right-content fa {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+
 
 footer {
   width: 100%;
